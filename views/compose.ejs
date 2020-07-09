@@ -2,9 +2,17 @@
 <h1>Compose</h1>
 
   <form class="" action="/compose" method="post">
-    <input type="text" name="blog" placeholder="New Blog">
-    <button type="submit" name="button">Publish</button>
+    <div class="class="form-group"">
+
+    <label for="">title</label>
+    <br><textarea class="form-control" name="title" rows="1" cols="150">Enter the title of your blog.</textarea>
+    <br><label for="">blog</label>
+    <br><textarea class="form-control" name="blog" rows="10" cols="150">Enter the body of your blog</textarea>
+    <br><button class="btn btn-primary" type="submit" name="button">Publish</button>
+    </div>
   </form>
+
+
 
 
 <%- include('partials/footer'); -%>
