@@ -34,6 +34,12 @@ app.get("/compose",function(req,res){
   res.render("compose")
 })
 
+app.post("/compose",function(req,res){
+  var content = req.body.blog;
+  console.log(content)
+
+})
+
 
 
 
