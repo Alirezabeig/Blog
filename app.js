@@ -41,7 +41,7 @@ app.get("/compose",function(req,res){
 app.post("/compose",function(req,res){
   var content = {
     title : req.body.title,
-    blog: req.body.blog
+    blog: req.body.blog,
   }
   posts.push(content)
   res.redirect("/")
